@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- Main -->
+<div id="main">
+    <div class="inner">
+        <header>
+            <h1>Welcome to Our Bakery 🍰</h1>
+            <p>Freshly baked delights, made with love.</p>
+        </header>
+
+        <section class="tiles">
+
+            <article class="style1">
+                <span class="image">
+                    <img src="{% static 'images/pic01.jpg' %}" alt="" />
+                </span>
+                <a href="/products/">
+                    <h2>Cakes</h2>
+                    <div class="content">
+                        <p>Delicious handmade cakes.</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="style2">
+                <span class="image">
+                    <img src="{% static 'images/pic02.jpg' %}" alt="" />
+                </span>
+                <a href="/products/">
+                    <h2>Pastries</h2>
+                    <div class="content">
+                        <p>Soft and creamy pastries.</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="style3">
+                <span class="image">
+                    <img src="{% static 'images/pic03.jpg' %}" alt="" />
+                </span>
+                <a href="/products/">
+                    <h2>Breads</h2>
+                    <div class="content">
+                        <p>Freshly baked breads.</p>
+                    </div>
+                </a>
+            </article>
+
+        </section>
+    </div>
+</div>
+
+{% endblock %}

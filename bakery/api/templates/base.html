@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Exquis Bakery</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+    <noscript>
+        <link rel="stylesheet" href="{% static 'assets/css/noscript.css' %}" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header (FROM TEMPLATE) -->
+        <header id="header">
+            <div class="inner">
+                <a href="/" class="logo">
+                    <span class="symbol">
+                        <img src="{% static 'images/logo.svg' %}" alt="" />
+                    </span>
+                    <span class="title">Bakery</span>
+                </a>
+
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Menu (FROM TEMPLATE) -->
+        <nav id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/products/">Products</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- MAIN CONTENT -->
+        {% block content %}{% endblock %}
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <p>© Bakery Website</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- JS (VERY IMPORTANT) -->
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/js/browser.min.js' %}"></script>
+    <script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/util.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+</html>
